@@ -7,13 +7,13 @@ public class Garage {
   static boolean quit = false;
   static String escape = "a";
 
-  static String mainInfo = "Status: ..\nBommar??: ..";
+  static String mainInfo = "\nSTATUS: [FULLT]\nBOMMAR: [UPPE/NERE]";
   static String mainMenu1 = "1. Admin";
   static String mainMenu2 = "2. Kund";
   static String mainMenu3 = "3. Avsluta";
   static String[] mainMenuText = {mainInfo, mainMenu1, mainMenu2, mainMenu3};
 
-  static String adminInfo = "Datum: ..\nTid: .. \nPris:..";
+  static String adminInfo = "\nDATUM: ..\nTID: .. \nPRIS:..";
   static String adminMenu1 = "1. Sätt tid";
   static String adminMenu2 = "2. Ta bort fordon";
   static String adminMenu3 = "3. Status";
@@ -41,7 +41,7 @@ public class Garage {
   static String logMenu6 = "6. Tillbaka";
   static String[] logMenuText = {logMenu1, logMenu2, logMenu3, logMenu4, logMenu5, logMenu6};
 
-  static String customerInfo = "Datum: ..\nTid: .. \nPris:..";
+  static String customerInfo = "\nDATUM: ..\nTID: .. \nPRIS:..";
   static String customerMenu1 = "1. Påbörja parkering";
   static String customerMenu2 = "2. Avsluta parkering";
   static String[] customerMenuText = {customerInfo, customerMenu1, customerMenu2};
@@ -77,7 +77,6 @@ public class Garage {
 
     switch (command) {
       case "mainMenu1":
-        System.out.println("Anrop till metod för att logga in");
         boolean loginSuccess = true; //lagra resultat av anrop till loginmetod
         if(loginSuccess) {
           menuText = adminMenuText;
